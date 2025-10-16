@@ -4,6 +4,15 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Robert Terupo | Paymaster</title>
+  <script>
+  const correctPassword = "recruit2025"; // You can change this to any password you like
+
+  const userPassword = prompt("Enter access password:");
+  if (userPassword !== correctPassword) {
+    alert("Incorrect password. Access denied.");
+    window.location.href = "https://www.google.com"; // Redirect if wrong
+  }
+  </script>
   <style>
     body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f4f4f4; color: #333; }
     header, section { padding: 20px; max-width: 800px; margin: auto; }
